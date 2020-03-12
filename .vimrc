@@ -50,6 +50,10 @@ set background=dark
 let g:gruvbox_italic=1
 colorscheme gruvbox
 
+" backup files
+set backupdir=~/.cache/vim 	" backup files
+set dir=~/.cache/vim		" swap files
+
 function! GitBranch()
     return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
 endfunction
